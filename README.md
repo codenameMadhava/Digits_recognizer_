@@ -1,2 +1,1 @@
-# Digits_recognizer_
-MNIST Hand Written Digit
+This repositoory will have the kaggle projects 
