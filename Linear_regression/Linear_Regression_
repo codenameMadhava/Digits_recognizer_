@@ -1,0 +1,30 @@
+Copy code
+# Salary Prediction with Simple Linear Regression
+
+## Overview
+This project explores the relationship between Years of Experience and Salary using a simple linear regression model. The dataset includes information about individuals' years of experience and their corresponding salaries.
+
+## Dataset
+The dataset used in this project is [Salary_dataset.csv](/kaggle/input/salary-dataset-simple-linear-regression/Salary_dataset.csv). It includes the following columns:
+- YearsExperience: Number of years of experience
+- Salary: Corresponding salary
+
+## Analysis
+- A linear regression model was trained on the dataset to predict salary based on years of experience.
+- The model achieved a high R-squared score of approximately 0.96, indicating a strong correlation between years of experience and salary.
+
+## Code
+The Jupyter Notebook [linear_regression_salary_prediction.ipynb](/path/to/your/notebook.ipynb) contains the code used for data exploration, model training, and evaluation.
+
+## Usage
+To run the code:
+1. Clone the repository.
+2. Open and run the Jupyter Notebook.
+
+Feel free to explore, modify, or contribute to the project.
+
+## Author
+Your Name
+
+## License
+This project is licensed under the [MIT License](/LICENSE).
