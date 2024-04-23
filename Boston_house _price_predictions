@@ -1,0 +1,41 @@
+
+Here's a README for the data processing steps you provided:
+
+Boston Housing Dataset
+Overview
+This dataset contains information collected by the U.S Census Service concerning housing in the area of Boston Mass. It was obtained from the StatLib archive (http://lib.stat.cmu.edu/datasets/boston), and has been used extensively throughout the literature to benchmark algorithms.
+
+Data Description
+The dataset contains the following columns:
+
+crim: per capita crime rate by town
+zn: proportion of residential land zoned for lots over 25,000 sq.ft.
+indus: proportion of non-retail business acres per town
+chas: Charles River dummy variable (1 if tract bounds river; 0 otherwise)
+nox: nitric oxides concentration (parts per 10 million)
+rm: average number of rooms per dwelling
+age: proportion of owner-occupied units built prior to 1940
+dis: weighted distances to five Boston employment centers
+rad: index of accessibility to radial highways
+tax: full-value property-tax rate per $10,000
+ptratio: pupil-teacher ratio by town
+b: 1000(Bk - 0.63)^2 where Bk is the proportion of [people of African American descent] by town
+lstat: lower status of the population (percent)
+medv: median value of owner-occupied homes in $1000s (target variable)
+Data Preprocessing
+Handling Missing Values:
+The 'rm' column contained 5 missing values. These rows were dropped from the dataset.
+Train-Test Split:
+The data was split into training and testing sets with a test size of 35% and a random state of 42.
+Feature Scaling:
+The features were scaled using StandardScaler to ensure all features contribute equally to the model.
+Model Training
+Linear Regression Model:
+A linear regression model was trained using the training data.
+Cross-Validation:
+Cross-validation was performed with 10 folds to evaluate the model's performance. The negative mean squared error (MSE) was used as the scoring metric.
+Model Evaluation:
+The trained model was evaluated on the test set using the coefficient of determination (R-squared) metric.
+Results
+Mean squared error (MSE) from cross-validation: -28.57
+R-squared score on the test set: 0.745
